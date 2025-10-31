@@ -22,4 +22,10 @@ app.get('/about', (request, response) => {
     })
 })
 
+app.post('/about', (request, response) => {
+    return response.json({
+        message : "All Login Form Data",
+        data : request.body || {}
+    })
+})
 //console.log(process.env.PORT, process.env.DB_NAME)
